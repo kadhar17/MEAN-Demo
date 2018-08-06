@@ -21,7 +21,7 @@ appexp.use(function(req, res, next) {
 var mongodbProcess = function() {}
 
 mongodbProcess.prototype.mongodbTest = function(data,mode,callback){
-
+   console.log("mongodbTest") 
   var res =  null;
     MongoClient.connect(dbpathurl, function (err, client) {
       assert.equal(null, err);
